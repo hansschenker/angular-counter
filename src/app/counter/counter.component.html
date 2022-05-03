@@ -1,0 +1,5 @@
+<div *ngIf="vm$ | async as vm">
+  Current counter : {{vm.count}}
+  <button type="button" (click)="decrAction.next(1)">Decrement</button>
+  <button type="button" (click)="incrAction.next(1)">Increment</button>
+</div>
